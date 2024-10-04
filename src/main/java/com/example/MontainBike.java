@@ -7,18 +7,14 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
-public class MontainBike extends Bicicleta {
-    @NoArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
 @Data
 @SuperBuilder
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
-abstract class MontainBike extends Bicicleta {
+abstract class MontainBike extends Bicicleta implements Bicicletas {
 
-    private int totalAsignaturas;
+    private String grosorNeumaticos;
 
-    
-
-}
 }

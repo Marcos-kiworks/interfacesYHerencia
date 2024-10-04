@@ -15,7 +15,7 @@ public abstract class Bicicleta {
     private int asientos;
     private int engranajes;
     private double velocidad;
-    private String grosorNeumatico;
+    
 
 }
 
