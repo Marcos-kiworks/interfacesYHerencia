@@ -2,10 +2,7 @@ package com.example;
 
 public class ElectricalBike implements Bicicletas {
 
-    private String marca;
-    private int asientos;
-    private int engranajes;
-    private double velocidad;
+    
     private Autonomia autonomia;
     @Override
     public void frenar(double velocidad) {
