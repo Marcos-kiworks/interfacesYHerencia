@@ -25,5 +25,30 @@ public class App {
             * sin incluir lo que devuelve.
             */
            
+            /* ¿Qué es la herencia? 
+             * La herencia es un mecanismo mediante el cual una clase o interfaz
+             * hereda todos los miembros que sean public o protected
+             * 
+             * Los constructores NO se heredan
+             */
+
+             Estudiante estudiante1 = new Estudiante();
+
+             estudiante1.setNombre("Rubén");
+             estudiante1.setGenero(Genero.HOMBRE);
+
+             System.out.println(estudiante1);
+
+             System.out.println("Estudiante 2");
+
+             
+            Estudiante estudiante2 = Estudiante.builder()
+                    .nombre("Iván")
+                    .genero(Genero.HOMBRE)
+                    .totalAsignaturas(10)
+                    .build();
+            System.out.println(estudiante2);
+
+
     }
 }
