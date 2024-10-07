@@ -10,8 +10,15 @@ import lombok.experimental.SuperBuilder;
 @Data
 @SuperBuilder
 public class Persona {
-    
+
     private String nombre;
     private Genero genero;
 
+    void platosDeComida() {
+        System.out.println("Se come un plato");
+    }
+
+    static void dormir() {
+        System.out.println("5 horas de sueño");
+    }
 }
